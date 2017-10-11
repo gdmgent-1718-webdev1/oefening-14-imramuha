@@ -1,12 +1,14 @@
 <?php
 
- $naam = "Imran Muhammad";
+$colours = array ("goldenrod", "green", "violet");
 
-    for ($i = 0; $i < 9; $i++){
-        for ($i = 0; $i*$i < 9; $i++){
-    echo "<div id=circle_goldenrod></div>";
-        };
-    };
+
+for ($i = 0; $i < 9; $i++){
+   
+    for ($j = 0; $j < 9; $j++){
+        echo "<div id=circle_{$colours[$j%3]}></div>";
+    }
+};
 
 
 
@@ -22,10 +24,6 @@
 </head>
 <body>
 
-        <?php $naam = "Imran Muhammad"?>
-
-        
-        <h1><?php echo $naam ?></h1>
 
 
 

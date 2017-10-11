@@ -1,12 +1,14 @@
 <?php
 
- $naam = "Imran Muhammad";
+    const rodecircles = 9;
 
-    for ($i = 0; $i < 9; $i++){
-        for ($i = 0; $i*$i < 9; $i++){
-    echo "<div id=circle_goldenrod></div>";
-        };
-    };
+    for ($i = 0; $i < rodecircles; $i++){ 
+        
+         for ($j = 7; $j >= $i - 1; $j--){ 
+             echo "<div id=circle_goldenrod></div>";
+           
+         }
+     };
 
 
 
@@ -22,10 +24,7 @@
 </head>
 <body>
 
-        <?php $naam = "Imran Muhammad"?>
-
-        
-        <h1><?php echo $naam ?></h1>
+       
 
 
 
