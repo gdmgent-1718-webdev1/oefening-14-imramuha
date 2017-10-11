@@ -2,7 +2,8 @@
 
     const rodecircles = 9;
 
-    for ($i = 0; $i < rodecircles; $i++){ 
+    for ($i = 0; $i < rodecircles; $i++){
+         
         
          for ($j = 7; $j >= $i - 1; $j--){ 
              echo "<div id=circle_goldenrod></div>";

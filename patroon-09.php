@@ -1,13 +1,20 @@
 <?php
 
- $naam = "Imran Muhammad";
+$colours = array ("goldenrod", "green", "violet");
 
-    for ($i = 0; $i < 9; $i++){
-        for ($i = 0; $i*$i < 9; $i++){
-    echo "<div id=circle_goldenrod></div>";
-        };
-    };
 
+for ($i = 1; $i < 10; $i++) {
+	for ($j = 1; $j < 10; $j++) {
+		if (10 - $i == $j or $i == $j) {
+			$colour = $colours[0];
+		} else if ( 10 - $j > $i) {
+			$colour = $colours[1];
+		} else {
+			$colour = $colours[2];
+		}
+		echo "<div id=circle_{$colour}></div>";
+	}
+}
 
 
 
@@ -22,10 +29,7 @@
 </head>
 <body>
 
-        <?php $naam = "Imran Muhammad"?>
-
-        
-        <h1><?php echo $naam ?></h1>
+      
 
 
 
